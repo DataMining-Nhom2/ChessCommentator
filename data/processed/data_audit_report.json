@@ -1,0 +1,260 @@
+{
+  "samples": 27512,
+  "top_level_keys": [
+    "input",
+    "instruction",
+    "output"
+  ],
+  "input_keys": {
+    "MoveNumber": 27512,
+    "Move": 27512,
+    "CurrentPlayer": 27512,
+    "Phase": 27512,
+    "Classification": 27512,
+    "MateThreat": 27512,
+    "Captured": 27512,
+    "MoveType": 27512,
+    "Check": 27512,
+    "Checkmate": 27512,
+    "GameOver": 27512,
+    "GameOverReason": 27512,
+    "Winner": 27512
+  },
+  "players": {
+    "White": 13866,
+    "Black": 13646
+  },
+  "phase": {
+    "Opening": 4152,
+    "Middlegame": 8000,
+    "Endgame": 15360
+  },
+  "classification": {
+    "Excellent move": 9984,
+    "Good move": 8809,
+    "Blunder move": 3587,
+    "Mistake move": 5132
+  },
+  "raw_move_type": {
+    "capture": 27512
+  },
+  "raw_captured_top": {
+    "P": 3807,
+    "p": 3806,
+    "N": 2544,
+    "n": 2476,
+    "B": 2141,
+    "b": 2137,
+    "Q": 1839,
+    "k": 1835,
+    "R": 1797,
+    "r": 1779,
+    "K": 1738,
+    "q": 1613
+  },
+  "san_flags": {
+    "capture_x": 6391,
+    "check_plus": 1966,
+    "mate_hash": 98,
+    "castle": 634,
+    "promotion": 54
+  },
+  "suspect_counts": {
+    "movetype_capture_total": 27512,
+    "movetype_capture_without_x": 21121,
+    "captured_nonempty_without_x": 21121,
+    "noncapture_output_capture_words": 16164,
+    "capture_output_missing_capture_words": 104,
+    "raw_check_mismatch_san": 0,
+    "raw_checkmate_mismatch_san": 0
+  },
+  "segments": {
+    "inferred_segments": 417,
+    "partial_segments": 317
+  },
+  "duplicates": {
+    "exact_duplicate_rows": 0,
+    "duplicate_inputs_extra": 7232,
+    "inputs_with_multiple_outputs": 3126
+  },
+  "feature_counts": {
+    "source": {
+      "replay": 27512
+    },
+    "replay_status": {
+      "success": 27512
+    },
+    "is_capture": 6391,
+    "is_castling": 634,
+    "is_check": 2064,
+    "is_checkmate": 98,
+    "is_promotion": 54,
+    "is_quiet": 19065
+  },
+  "replay": {
+    "attempted": true,
+    "available": true,
+    "success_rows": 27512,
+    "failed_rows": 0,
+    "skipped_rows": 0,
+    "pass_rate": 1.0,
+    "failures": []
+  },
+  "stockfish": {
+    "attempted": false,
+    "message": "Disabled; pass --with-stockfish to enable."
+  },
+  "rewrite": {
+    "clean_rows": 27512,
+    "quarantine_rows": 0,
+    "rewrite_source_counts": {
+      "raw": 10758,
+      "deterministic_draft": 16754
+    },
+    "old_error_counts": {
+      "capture_hallucination": 16164,
+      "blunder_missing": 1407,
+      "castling_capture_error": 34,
+      "word_count_out_of_range": 13,
+      "check_missing": 2
+    },
+    "final_error_counts": {}
+  },
+  "sft_split": {
+    "requested_seed": 42,
+    "used_seed": 42,
+    "ratios": {
+      "train": 0.7,
+      "valid": 0.2,
+      "test": 0.10000000000000003
+    },
+    "games": 417,
+    "row_counts": {
+      "train": 19407,
+      "test": 2882,
+      "valid": 5223
+    },
+    "game_counts": {
+      "train": 291,
+      "valid": 83,
+      "test": 43
+    },
+    "feature_counts": {
+      "train": {
+        "rows": 19407,
+        "games": 291,
+        "is_capture": 4457,
+        "is_castling": 447,
+        "is_checkmate": 77,
+        "is_promotion": 38,
+        "is_quiet": 13500
+      },
+      "valid": {
+        "rows": 5223,
+        "games": 83,
+        "is_capture": 1242,
+        "is_castling": 126,
+        "is_checkmate": 13,
+        "is_promotion": 12,
+        "is_quiet": 3583
+      },
+      "test": {
+        "rows": 2882,
+        "games": 43,
+        "is_capture": 692,
+        "is_castling": 61,
+        "is_checkmate": 8,
+        "is_promotion": 4,
+        "is_quiet": 1982
+      }
+    },
+    "coverage_missing": [],
+    "leakage_game_ids": [],
+    "sft_validation": {
+      "train": {
+        "rows": 19407,
+        "empty_outputs": 0,
+        "min_words": 5,
+        "max_words": 60,
+        "sample_outputs": [
+          "Okay, here we go! White starts with f3, okay, a bit unusual. Black has a slight advantage early on.",
+          "Black plays e5, a quiet pawn move that improves the position. It is a good move and keeps the game steady.",
+          "Alright, white just played g4... Oh man, that's a blunder! White just hung a pawn. Black's going to be loving this! Black has a huge lead now.",
+          "Oh wow! Black just played Qh4 checkmate! Game Over! Black wins!",
+          "Okay, here we go! White starts with knight to f3. Solid developing move, controlling some central squares. White is slightly better right now.",
+          "Black plays c5, a quiet pawn move that improves the position. It is an excellent move and keeps the position under control.",
+          "White plays d4, a quiet pawn move that improves the position. It is a good move and keeps the game steady.",
+          "Black plays d6, a quiet pawn move that improves the position. It is a mistake and the opponent gets useful chances.",
+          "Okay, White just took that pawn! Nice, developing a piece while grabbing some space. White's got a solid advantage now, about a pawn and a quarter. Good stuff!",
+          "Black plays e5, a quiet pawn move that improves the position. It is a good move and keeps the game steady.",
+          "Alright, White takes with the pawn! Capturing that pawn on d6. Solid move, opening up the position a bit more. White is looking good here, slightly better.",
+          "Okay, Black just snatched that pawn! Black's Bishop takes the pawn on D6, a good capture. White's advantage is still there, but Black is definitely getting active. Looks like Black is trying to trade pieces.",
+          "White plays e3, a quiet pawn move that improves the position. It is a mistake and the opponent gets useful chances.",
+          "Black plays Nc6, a quiet knight move that improves the position. It is a good move and keeps the game steady.",
+          "White plays Bb5, a quiet bishop move that improves the position. It is a good move and keeps the game steady.",
+          "Black plays Ne7, a quiet knight move that improves the position. It is a good move and keeps the game steady.",
+          "Okay, White castles kingside. Solid move, getting the king to safety! They're playing it safe, good strategy. White still has a slight edge.",
+          "Okay, Black castles kingside, safe and sound... White still has a slight edge, it looks like. Black is probably aiming to get the pieces active now.",
+          "White plays h3, a quiet pawn move that improves the position. It is a good move and keeps the game steady.",
+          "Black plays Bd7, a quiet bishop move that improves the position. It is a serious blunder and gives the opponent a clear chance."
+        ]
+      },
+      "valid": {
+        "rows": 5223,
+        "empty_outputs": 0,
+        "min_words": 12,
+        "max_words": 56,
+        "sample_outputs": [
+          "Okay, White starts with d4, the Queen's Pawn opening. Solid, controlling the center. White has a small edge here. Let's see what Black does.",
+          "Black plays d5, a quiet pawn move that improves the position. It is a good move and keeps the game steady.",
+          "Okay, White starts with Nf3, a nice developing move, controlling some central squares. White's looking good, with a slight edge.",
+          "Okay, Black develops the knight, aiming for the center. Good developing move! White still has a slight edge, but Black's getting organized.",
+          "White plays e3, a quiet pawn move that improves the position. It is a good move and keeps the game steady.",
+          "Black plays c6, a quiet pawn move that improves the position. It is a good move and keeps the game steady.",
+          "White plays Be2, a quiet bishop move that improves the position. It is a good move and keeps the game steady.",
+          "Black plays e6, a quiet pawn move that improves the position. It is a good move and keeps the game steady.",
+          "Okay, White castles! Good, getting the king safe. White's got a slight edge here, about a fifth of a pawn. Nothing too crazy yet.",
+          "Okay, Black's bringing that knight into the game with Nbd7. Nice development! Seems like a solid move. White still has a small edge, just a little over the advantage.",
+          "White plays Nbd2, a quiet knight move that improves the position. It is an excellent move and keeps the position under control.",
+          "Black plays Be7, a quiet bishop move that improves the position. It is a good move and keeps the game steady.",
+          "White plays b3, a quiet pawn move that improves the position. It is a good move and keeps the game steady.",
+          "Okay, Black castles kingside. Solid move, getting the king to safety! White still has a slight edge, but Black is developing well.",
+          "White plays Bb2, a quiet bishop move that improves the position. It is an excellent move and keeps the position under control.",
+          "Black plays Ne4, a quiet knight move that improves the position. It is a good move and keeps the game steady.",
+          "White plays Ne5, a quiet knight move that improves the position. It is a good move and keeps the game steady.",
+          "Okay, Black takes the knight! Black is going after that pawn, which is good because it opens things up a bit, still white has a tiny advantage.",
+          "Okay, White takes the pawn! dxe5. Solid, solid. White's getting a slight edge here, the evaluation's ticking up a bit. Let's see where this goes...",
+          "Black plays f5, a quiet pawn move that improves the position. It is a good move and keeps the game steady."
+        ]
+      },
+      "test": {
+        "rows": 2882,
+        "empty_outputs": 0,
+        "min_words": 12,
+        "max_words": 57,
+        "sample_outputs": [
+          "Alright, White starts with the King's pawn, a classic! e4, good opening. White's already got a little edge, just setting the stage here.",
+          "Black plays e5, a quiet pawn move that improves the position. It is an excellent move and keeps the position under control.",
+          "Okay, White's developing a knight, a solid opening move. Getting that knight to a good square early is always a good plan. White's got a slight edge now, according to the evaluations.",
+          "Okay, black responds with knight to C6, a solid developing move. Black's knight now controls some central squares. White still has a slight advantage, it seems.",
+          "White plays Bb5, a quiet bishop move that improves the position. It is a good move and keeps the game steady.",
+          "Black plays Bc5, a quiet bishop move that improves the position. It is a good move and keeps the game steady.",
+          "Okay, White castles! Solid move to get the king safe. White's up a little bit, just a slight edge now. Looks like a good, safe position.",
+          "Black plays d6, a quiet pawn move that improves the position. It is an excellent move and keeps the position under control.",
+          "Okay, white played h3. Just protecting that g4 square. White still has a small edge.",
+          "Black plays Bd7, a quiet bishop move that improves the position. It is a good move and keeps the game steady.",
+          "White plays c3, a quiet pawn move that improves the position. It is an excellent move and keeps the position under control.",
+          "Black plays a6, a quiet pawn move that improves the position. It is an excellent move and keeps the position under control.",
+          "White plays Ba4, a quiet bishop move that improves the position. It is an excellent move and keeps the position under control.",
+          "Black plays b5, a quiet pawn move that improves the position. It is an excellent move and keeps the position under control.",
+          "White plays Bc2, a quiet bishop move that improves the position. It is an excellent move and keeps the position under control.",
+          "Black plays Nf6, a quiet knight move that improves the position. It is an excellent move and keeps the position under control.",
+          "White plays Re1, a quiet rook move that improves the position. It is an excellent move and keeps the position under control.",
+          "Black plays h6, a quiet pawn move that improves the position. It is an excellent move and keeps the position under control.",
+          "White plays d4, a quiet pawn move that improves the position. It is an excellent move and keeps the position under control.",
+          "Black plays Bb6, a quiet bishop move that improves the position. It is an excellent move and keeps the position under control."
+        ]
+      }
+    }
+  }
+}

@@ -33,3 +33,8 @@ Thumbs.db
 # Stockfish binaries
 stockfish/*.exe
 stockfish/*.bin
+
+# Model artifacts
+models/
+runs/
+checkpoint-*/

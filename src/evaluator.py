@@ -1,7 +1,7 @@
 import chess
 import chess.engine
 
-def analyze_with_stockfish(game, engine_path: str, depth: int = 15):
+def analyze_with_stockfish(game, engine_path: str, depth: int = 8):
     """Đánh giá trận đấu bằng Stockfish, tính ACPL riêng cho Trắng và Đen."""
     engine = chess.engine.SimpleEngine.popen_uci(engine_path)
     board = game.board()
