@@ -1,0 +1,39 @@
+{
+  "rows": 40,
+  "text_field": "prediction",
+  "errors": {},
+  "error_rates": {},
+  "warnings": {
+    "generic_template_phrase": 27
+  },
+  "warning_rates": {
+    "generic_template_phrase": 0.675
+  },
+  "min_words": 17,
+  "max_words": 41,
+  "avg_words": 30.025,
+  "performance": {
+    "load_seconds": 0.0,
+    "generation_seconds": 0.011488399999507237,
+    "wall_seconds": 0.01419739999982994,
+    "samples": 40,
+    "samples_per_second": 3481.772918919579,
+    "seconds_per_sample": 0.00028720999998768095,
+    "latency_avg": 0.0,
+    "latency_p50": 0.0,
+    "latency_p95": 0.0,
+    "prediction_words_avg": 30.025,
+    "prediction_words_min": 17,
+    "prediction_words_max": 41
+  },
+  "postprocess": {
+    "source_jsonl": "C:\\Users\\Celine\\.codex\\attachments\\e3b56999-3e92-4a28-8e17-697d71e040c7\\pasted-text.txt",
+    "sanitize": true,
+    "postprocess_seconds": 0.011488399999507237
+  },
+  "outputs": {
+    "predictions_jsonl": "reports\\game_20_moves_sanitized_predictions.jsonl",
+    "predictions_csv": "reports\\game_20_moves_sanitized_predictions.csv",
+    "review_markdown": "reports\\game_20_moves_sanitized_review.md"
+  }
+}

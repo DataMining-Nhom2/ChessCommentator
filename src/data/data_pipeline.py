@@ -806,6 +806,8 @@ def make_user_prompt(record: Dict[str, Any]) -> str:
         fields.append(f"AdvantageAfter: {record['advantage_after']}")
     if record.get("cpl") is not None:
         fields.append(f"CPL: {record['cpl']}")
+    if record.get("best_move_uci"):
+        fields.append(f"BestMoveUCI: {record['best_move_uci']}")
     return " | ".join(fields)
 
 

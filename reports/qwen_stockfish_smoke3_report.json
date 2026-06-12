@@ -1,0 +1,31 @@
+{
+  "rows": 3,
+  "text_field": "prediction",
+  "errors": {},
+  "error_rates": {},
+  "warnings": {},
+  "warning_rates": {},
+  "min_words": 32,
+  "max_words": 35,
+  "avg_words": 34.0,
+  "performance": {
+    "load_seconds": 31.320071400004963,
+    "generation_seconds": 20.685551299997314,
+    "wall_seconds": 60.27318589999777,
+    "samples": 3,
+    "samples_per_second": 0.14502876701189923,
+    "seconds_per_sample": 6.895183766665771,
+    "latency_avg": 6.89461199999884,
+    "latency_p50": 6.594564699997136,
+    "latency_p95": 7.692715999997745,
+    "prediction_words_avg": 34,
+    "prediction_words_min": 32,
+    "prediction_words_max": 35
+  },
+  "sanitize": true,
+  "outputs": {
+    "predictions_jsonl": "reports\\qwen_stockfish_smoke3_predictions.jsonl",
+    "predictions_csv": "reports\\qwen_stockfish_smoke3_predictions.csv",
+    "review_markdown": "reports\\qwen_stockfish_smoke3_review.md"
+  }
+}

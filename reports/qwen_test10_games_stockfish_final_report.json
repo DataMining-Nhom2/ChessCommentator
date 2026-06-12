@@ -1,0 +1,351 @@
+{
+  "rows": 247,
+  "text_field": "prediction",
+  "errors": {},
+  "error_rates": {},
+  "warnings": {
+    "generic_template_phrase": 141
+  },
+  "warning_rates": {
+    "generic_template_phrase": 0.5708502024291497
+  },
+  "min_words": 15,
+  "max_words": 47,
+  "avg_words": 27.218623481781375,
+  "feature_metrics": {
+    "text_field": "prediction",
+    "capture": {
+      "tp": 58,
+      "fp": 0,
+      "fn": 7,
+      "tn": 182,
+      "support": 65,
+      "predicted_positive": 58,
+      "precision": 1.0,
+      "recall": 0.8923076923076924,
+      "f1": 0.9430894308943091,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.1076923076923077,
+      "accuracy": 0.97165991902834
+    },
+    "check": {
+      "tp": 16,
+      "fp": 0,
+      "fn": 0,
+      "tn": 231,
+      "support": 16,
+      "predicted_positive": 16,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.0,
+      "accuracy": 1.0
+    },
+    "checkmate": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "tn": 245,
+      "support": 2,
+      "predicted_positive": 2,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.0,
+      "accuracy": 1.0
+    },
+    "castling": {
+      "tp": 6,
+      "fp": 0,
+      "fn": 0,
+      "tn": 241,
+      "support": 6,
+      "predicted_positive": 6,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.0,
+      "accuracy": 1.0
+    },
+    "promotion": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 246,
+      "support": 1,
+      "predicted_positive": 1,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.0,
+      "accuracy": 1.0
+    },
+    "engine_quality": {
+      "tp": 247,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0,
+      "support": 247,
+      "predicted_positive": 247,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_positive_rate": null,
+      "false_negative_rate": 0.0,
+      "accuracy": 1.0
+    },
+    "engine_exact": {
+      "expected_engine_rows": 247,
+      "engine_mentioned": 247,
+      "engine_mention_rate": 1.0,
+      "cpl_exact_mentioned": 247,
+      "cpl_exact_mention_rate": 1.0,
+      "classification_word_mentioned": 247,
+      "classification_word_mention_rate": 1.0
+    }
+  },
+  "per_game": {
+    "game_000015": {
+      "rows": 28,
+      "first_move": "d4",
+      "last_move": "Nxg4",
+      "error_count": 0,
+      "warning_count": 17,
+      "avg_latency_seconds": 5.841244121430074
+    },
+    "game_000016": {
+      "rows": 19,
+      "first_move": "h3",
+      "last_move": "Nxf2",
+      "error_count": 0,
+      "warning_count": 13,
+      "avg_latency_seconds": 5.5891111105267655
+    },
+    "game_000111": {
+      "rows": 23,
+      "first_move": "e4",
+      "last_move": "Qxe7#",
+      "error_count": 0,
+      "warning_count": 11,
+      "avg_latency_seconds": 6.476458813042922
+    },
+    "game_000114": {
+      "rows": 24,
+      "first_move": "e4",
+      "last_move": "Bxg4",
+      "error_count": 0,
+      "warning_count": 16,
+      "avg_latency_seconds": 5.474013016665897
+    },
+    "game_000229": {
+      "rows": 9,
+      "first_move": "e4",
+      "last_move": "Bxc4",
+      "error_count": 0,
+      "warning_count": 2,
+      "avg_latency_seconds": 5.0247835777764625
+    },
+    "game_000258": {
+      "rows": 29,
+      "first_move": "d4",
+      "last_move": "Qbxd7#",
+      "error_count": 0,
+      "warning_count": 17,
+      "avg_latency_seconds": 5.919729031034563
+    },
+    "game_000287": {
+      "rows": 11,
+      "first_move": "e4",
+      "last_move": "Bb5",
+      "error_count": 0,
+      "warning_count": 7,
+      "avg_latency_seconds": 5.64864426363585
+    },
+    "game_000346": {
+      "rows": 40,
+      "first_move": "e4",
+      "last_move": "Bxd4",
+      "error_count": 0,
+      "warning_count": 20,
+      "avg_latency_seconds": 12.348011875000338
+    },
+    "game_000359": {
+      "rows": 41,
+      "first_move": "e4",
+      "last_move": "Bxf5",
+      "error_count": 0,
+      "warning_count": 26,
+      "avg_latency_seconds": 8.184520760975586
+    },
+    "game_000413": {
+      "rows": 23,
+      "first_move": "d4",
+      "last_move": "Nxf6+",
+      "error_count": 0,
+      "warning_count": 12,
+      "avg_latency_seconds": 7.306811430433616
+    }
+  },
+  "raw_prediction_eval": {
+    "rows": 247,
+    "text_field": "raw_prediction",
+    "errors": {
+      "advantage_contradiction": 71,
+      "captured_piece_mismatch": 24,
+      "wrong_move_mention": 5,
+      "missing_move_reference": 5,
+      "promotion_action_missing": 1,
+      "promotion_actor_confusion": 1,
+      "material_exchange_hallucination": 1
+    },
+    "error_rates": {
+      "advantage_contradiction": 0.2874493927125506,
+      "captured_piece_mismatch": 0.09716599190283401,
+      "wrong_move_mention": 0.020242914979757085,
+      "missing_move_reference": 0.020242914979757085,
+      "promotion_action_missing": 0.004048582995951417,
+      "promotion_actor_confusion": 0.004048582995951417,
+      "material_exchange_hallucination": 0.004048582995951417
+    },
+    "warnings": {
+      "generic_template_phrase": 146,
+      "exact_reference_copy": 69,
+      "engine_quality_missing": 77,
+      "high_reference_overlap": 14
+    },
+    "warning_rates": {
+      "generic_template_phrase": 0.5910931174089069,
+      "exact_reference_copy": 0.2793522267206478,
+      "engine_quality_missing": 0.3117408906882591,
+      "high_reference_overlap": 0.05668016194331984
+    },
+    "min_words": 17,
+    "max_words": 47,
+    "avg_words": 23.522267206477732
+  },
+  "raw_feature_metrics": {
+    "text_field": "raw_prediction",
+    "capture": {
+      "tp": 62,
+      "fp": 0,
+      "fn": 3,
+      "tn": 182,
+      "support": 65,
+      "predicted_positive": 62,
+      "precision": 1.0,
+      "recall": 0.9538461538461539,
+      "f1": 0.9763779527559054,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.046153846153846156,
+      "accuracy": 0.9878542510121457
+    },
+    "check": {
+      "tp": 16,
+      "fp": 0,
+      "fn": 0,
+      "tn": 231,
+      "support": 16,
+      "predicted_positive": 16,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.0,
+      "accuracy": 1.0
+    },
+    "checkmate": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "tn": 245,
+      "support": 2,
+      "predicted_positive": 2,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.0,
+      "accuracy": 1.0
+    },
+    "castling": {
+      "tp": 6,
+      "fp": 0,
+      "fn": 0,
+      "tn": 241,
+      "support": 6,
+      "predicted_positive": 6,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.0,
+      "accuracy": 1.0
+    },
+    "promotion": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "tn": 246,
+      "support": 1,
+      "predicted_positive": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 1.0,
+      "accuracy": 0.9959514170040485
+    },
+    "engine_quality": {
+      "tp": 139,
+      "fp": 0,
+      "fn": 108,
+      "tn": 0,
+      "support": 247,
+      "predicted_positive": 139,
+      "precision": 1.0,
+      "recall": 0.562753036437247,
+      "f1": 0.7202072538860104,
+      "false_positive_rate": null,
+      "false_negative_rate": 0.43724696356275305,
+      "accuracy": 0.562753036437247
+    },
+    "engine_exact": {
+      "expected_engine_rows": 247,
+      "engine_mentioned": 139,
+      "engine_mention_rate": 0.562753036437247,
+      "cpl_exact_mentioned": 0,
+      "cpl_exact_mention_rate": 0.0,
+      "classification_word_mentioned": 151,
+      "classification_word_mention_rate": 0.611336032388664
+    }
+  },
+  "performance": {
+    "load_seconds": 0.0,
+    "generation_seconds": 1826.6555816999899,
+    "wall_seconds": 1826.6555816999899,
+    "samples": 247,
+    "samples_per_second": 0.1352197986716947,
+    "seconds_per_sample": 7.395366727530323,
+    "latency_avg": 7.395366727530323,
+    "latency_p50": 5.79697020000458,
+    "latency_p95": 13.496059199998854,
+    "prediction_words_avg": 27.218623481781375,
+    "prediction_words_min": 15,
+    "prediction_words_max": 47
+  },
+  "postprocess": {
+    "source_jsonl": "reports/qwen_test10_games_stockfish_predictions_with_meta.jsonl",
+    "sanitize": true,
+    "postprocess_seconds": 0.0629754999972647,
+    "performance_from_stored_latency": true
+  },
+  "outputs": {
+    "predictions_jsonl": "reports\\qwen_test10_games_stockfish_final_predictions.jsonl",
+    "predictions_csv": "reports/qwen_test10_games_stockfish_final_predictions.csv",
+    "review_markdown": "reports/qwen_test10_games_stockfish_final_review.md"
+  }
+}

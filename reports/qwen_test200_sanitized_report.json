@@ -1,0 +1,41 @@
+{
+  "rows": 200,
+  "text_field": "prediction",
+  "errors": {},
+  "error_rates": {},
+  "warnings": {
+    "generic_template_phrase": 125,
+    "exact_reference_copy": 118
+  },
+  "warning_rates": {
+    "generic_template_phrase": 0.625,
+    "exact_reference_copy": 0.59
+  },
+  "min_words": 6,
+  "max_words": 37,
+  "avg_words": 18.94,
+  "performance": {
+    "load_seconds": 0.0,
+    "generation_seconds": 0.046288099998491816,
+    "wall_seconds": 0.04994869999791263,
+    "samples": 200,
+    "samples_per_second": 4320.764948367216,
+    "seconds_per_sample": 0.00023144049999245908,
+    "latency_avg": 5.230720378999995,
+    "latency_p50": 4.891123200002767,
+    "latency_p95": 7.604256999999052,
+    "prediction_words_avg": 18.94,
+    "prediction_words_min": 6,
+    "prediction_words_max": 37
+  },
+  "postprocess": {
+    "source_jsonl": "reports\\qwen_test200_predictions.jsonl",
+    "sanitize": true,
+    "postprocess_seconds": 0.046288099998491816
+  },
+  "outputs": {
+    "predictions_jsonl": "reports\\qwen_test200_sanitized_predictions.jsonl",
+    "predictions_csv": "reports\\qwen_test200_sanitized_predictions.csv",
+    "review_markdown": "reports\\qwen_test200_sanitized_review.md"
+  }
+}

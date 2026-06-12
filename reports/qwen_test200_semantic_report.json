@@ -1,0 +1,19 @@
+{
+  "rows": 200,
+  "text_field": "prediction",
+  "errors": {},
+  "error_rates": {},
+  "warnings": {
+    "advantage_claim_without_prompt": 62,
+    "generic_template_phrase": 125,
+    "exact_reference_copy": 118
+  },
+  "warning_rates": {
+    "advantage_claim_without_prompt": 0.31,
+    "generic_template_phrase": 0.625,
+    "exact_reference_copy": 0.59
+  },
+  "min_words": 17,
+  "max_words": 37,
+  "avg_words": 22.64
+}

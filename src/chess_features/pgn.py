@@ -54,13 +54,19 @@ def winner_after_move(board: chess.Board) -> str:
 
 
 def record_move_and_push(board: chess.Board, move: chess.Move, ply: int) -> Dict[str, Any]:
+    fen_before = board.fen()
     record: Dict[str, Any] = {
         "fullmove_number": (ply + 1) // 2,
         "current_player": "White" if board.turn == chess.WHITE else "Black",
         "san": board.san(move),
+        "uci": move.uci(),
         "piece": piece_name(board.piece_at(move.from_square)),
         "from_square": chess.square_name(move.from_square),
         "to_square": chess.square_name(move.to_square),
+        "feature_source": "replay",
+        "replay_status": "success",
+        "fen_before": fen_before,
+        "fen_after": None,
         "phase_raw": phase_for_ply(ply, board),
         "classification_raw": "Unknown",
         "classification_stockfish": None,
@@ -79,6 +85,7 @@ def record_move_and_push(board: chess.Board, move: chess.Move, ply: int) -> Dict
     }
 
     board.push(move)
+    record["fen_after"] = board.fen()
     record["is_check"] = board.is_check()
     record["is_checkmate"] = board.is_checkmate()
     if board.is_game_over():

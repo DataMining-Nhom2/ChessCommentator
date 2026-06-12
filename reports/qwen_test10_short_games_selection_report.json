@@ -1,0 +1,92 @@
+{
+  "rows": 247,
+  "test_game_selection": {
+    "processed_file": "data/processed/commentary_rewritten_en.jsonl",
+    "split_seed": 42,
+    "train_ratio": 0.7,
+    "valid_ratio": 0.2,
+    "requested_games": 10,
+    "selection_strategy": "shortest",
+    "selected_game_ids": [
+      "game_000229",
+      "game_000287",
+      "game_000016",
+      "game_000111",
+      "game_000413",
+      "game_000114",
+      "game_000015",
+      "game_000258",
+      "game_000346",
+      "game_000359"
+    ],
+    "selected_rows": 247,
+    "rows_per_game": {
+      "game_000229": 9,
+      "game_000287": 11,
+      "game_000016": 19,
+      "game_000111": 23,
+      "game_000413": 23,
+      "game_000114": 24,
+      "game_000015": 28,
+      "game_000258": 29,
+      "game_000346": 40,
+      "game_000359": 41
+    },
+    "split_summary": {
+      "requested_seed": 42,
+      "used_seed": 42,
+      "ratios": {
+        "train": 0.7,
+        "valid": 0.2,
+        "test": 0.10000000000000003
+      },
+      "games": 417,
+      "row_counts": {
+        "train": 19407,
+        "test": 2882,
+        "valid": 5223
+      },
+      "game_counts": {
+        "train": 291,
+        "valid": 83,
+        "test": 43
+      },
+      "feature_counts": {
+        "train": {
+          "rows": 19407,
+          "games": 291,
+          "is_capture": 4457,
+          "is_castling": 447,
+          "is_checkmate": 77,
+          "is_promotion": 38,
+          "is_quiet": 13500
+        },
+        "valid": {
+          "rows": 5223,
+          "games": 83,
+          "is_capture": 1242,
+          "is_castling": 126,
+          "is_checkmate": 13,
+          "is_promotion": 12,
+          "is_quiet": 3583
+        },
+        "test": {
+          "rows": 2882,
+          "games": 43,
+          "is_capture": 692,
+          "is_castling": 61,
+          "is_checkmate": 8,
+          "is_promotion": 4,
+          "is_quiet": 1982
+        }
+      },
+      "coverage_missing": [],
+      "leakage_game_ids": []
+    },
+    "stockfish": null
+  },
+  "outputs": {
+    "selected_rows_jsonl": "reports/qwen_test10_short_games_selected.jsonl",
+    "selection_report": "reports/qwen_test10_short_games_selection_report.json"
+  }
+}

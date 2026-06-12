@@ -1,0 +1,35 @@
+{
+  "rows": 17,
+  "text_field": "prediction",
+  "errors": {},
+  "error_rates": {},
+  "warnings": {
+    "generic_template_phrase": 2
+  },
+  "warning_rates": {
+    "generic_template_phrase": 0.11764705882352941
+  },
+  "min_words": 15,
+  "max_words": 39,
+  "avg_words": 30.823529411764707,
+  "performance": {
+    "load_seconds": 20.380811399998493,
+    "generation_seconds": 117.60121989999607,
+    "wall_seconds": 145.22700780000014,
+    "samples": 17,
+    "samples_per_second": 0.14455632360324325,
+    "seconds_per_sample": 6.917718817646827,
+    "latency_avg": 6.917272447059291,
+    "latency_p50": 6.377906499998062,
+    "latency_p95": 9.628999200002,
+    "prediction_words_avg": 30.823529411764707,
+    "prediction_words_min": 15,
+    "prediction_words_max": 39
+  },
+  "sanitize": true,
+  "outputs": {
+    "predictions_jsonl": "reports\\qwen_curated_stockfish_predictions.jsonl",
+    "predictions_csv": "reports\\qwen_curated_stockfish_predictions.csv",
+    "review_markdown": "reports\\qwen_curated_stockfish_review.md"
+  }
+}
