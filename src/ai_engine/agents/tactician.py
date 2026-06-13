@@ -31,6 +31,9 @@ Chỉ trả về JSON hợp lệ theo schema:
 Không thêm markdown, không thêm lời dẫn ngoài JSON.
 Nếu dữ liệu FEN/best move chưa đủ để kết luận motif chính xác, hãy nói thận trọng
 và dựa trên eval swing/CPL thay vì bịa motif.
+Chỉ phân tích các nước có trong critical_blunders. Không gọi một nước là blunder
+hoặc mistake nếu dữ liệu không đưa nó vào danh sách này. Không chê các nước khai
+cuộc lý thuyết như e5, Nc6, a6 chỉ vì best_move khác ở depth thấp.
 """.strip()
 
 

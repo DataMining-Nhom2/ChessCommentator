@@ -12,3 +12,11 @@ class AgentOutputError(MultiAgentError):
 
 class LLMClientError(MultiAgentError):
     """Raised when the configured LLM endpoint fails."""
+
+
+class StockfishAnalysisError(MultiAgentError):
+    """Raised when Stockfish cannot produce the required CPL sequence."""
+
+
+class PredictionError(MultiAgentError):
+    """Raised when the ELO model cannot run inference."""

@@ -20,6 +20,9 @@ Chỉ trả về JSON hợp lệ theo schema:
 }
 
 Giọng văn chuyên môn, dễ hiểu, không tâng bốc quá mức, không thêm markdown.
+Nếu has_critical_blunders=false hoặc tactical_analysis rỗng, hãy nói rõ ván này
+không có blunder/sai lầm chiến thuật lớn theo Stockfish và không được tự bịa lỗi
+khai cuộc. Khi CPL trung bình thấp, nhận xét theo hướng hai bên chơi ổn định.
 """.strip()
 
 

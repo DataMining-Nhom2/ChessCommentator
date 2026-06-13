@@ -36,3 +36,17 @@ class Step3AnalysisResponse(BaseModel):
     success: bool
     data: dict[str, Any] | None = None
     error: str | None = None
+
+
+class PredictEloRequest(BaseModel):
+    pgn: str = Field(..., min_length=1)
+    clock_times: list[float] = Field(default_factory=list)
+    result: str | None = None
+    time_control: str | None = None
+    include_debug: bool = False
+
+
+class PredictEloResponse(BaseModel):
+    success: bool
+    data: dict[str, Any] | None = None
+    error: str | None = None

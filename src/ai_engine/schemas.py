@@ -160,6 +160,10 @@ class DataMinerResult:
         return {
             "eco": self.eco.to_dict(),
             "stats": self.stats.to_dict(),
+            "analysis_policy": {
+                "critical_blunders_contains_only_major_candidates": True,
+                "do_not_invent_errors_when_list_is_empty": True,
+            },
             "critical_blunders": [
                 move.to_dict(include_board=True) for move in self.critical_blunders
             ],
@@ -171,6 +175,7 @@ class DataMinerResult:
         return {
             "eco": self.eco.to_dict(),
             "stats": self.stats.to_dict(),
+            "has_critical_blunders": bool(self.critical_blunders),
             "critical_blunders": [
                 move.to_dict(include_board=False) for move in self.critical_blunders
             ],

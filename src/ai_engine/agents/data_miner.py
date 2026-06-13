@@ -24,10 +24,12 @@ class DataMinerAgent:
         self,
         opening_book: OpeningBook | None = None,
         blunder_threshold: float = 200.0,
+        critical_threshold: float = 50.0,
         critical_count: int = 3,
     ):
         self.opening_book = opening_book or OpeningBook.default()
         self.blunder_threshold = blunder_threshold
+        self.critical_threshold = critical_threshold
         self.critical_count = critical_count
 
     def run(self, context: AnalysisContext) -> DataMinerResult:
@@ -142,7 +144,11 @@ class DataMinerAgent:
     def _top_critical_moves(
         self, metrics: tuple[MoveMetric, ...]
     ) -> tuple[MoveMetric, ...]:
-        candidates = [move for move in metrics if move.cpl > 0]
+        candidates = [
+            move
+            for move in metrics
+            if move.is_blunder or move.cpl >= self.critical_threshold
+        ]
         ranked = sorted(candidates, key=lambda move: move.cpl, reverse=True)
         return tuple(ranked[: self.critical_count])
 
